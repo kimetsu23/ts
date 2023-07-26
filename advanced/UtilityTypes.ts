@@ -33,7 +33,7 @@ interface Props {
   const obj: Props = { a: 5 };
    
 //   con Required tienes que llamarlos a todos
-  const obj2: Required<Props> = { a: 5 };
+  // const obj2: Required<Props> = { a: 5 };
 
 
 //   Records<Keys, Types> Es para la creacion de los Objetos
@@ -60,13 +60,13 @@ interface NameInfo {
 // Se usa para escoger los campos que quiero utilizar y los que no 
 // Examplo
 
-interface Todo {
+interface Too {
     title: string;
     description: string;
     completed: boolean;
   }
    
-  type TodoPreview = Pick<Todo, "title" | "completed">;
+  type TodoPreview = Pick<Too, "title" | "completed">;
    
   const todo: TodoPreview = {
     title: "Clean room",
